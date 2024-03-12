@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery Homework</title>
+  <link rel="stylesheet" href="css/style.css">
+<script>
+	document.addEventListener('DOMContentLoaded',function(){
+//Get the parent div element
+	const parentDiv = document.querySelector('.littlePics');
+//Select all the image elements inside the parent div
+	const images=parentDiv.querySelectorAll('#littlePic');
+//loop through the images and assign tabindex
+	images.forEach((image)=>{
+  	image.setAttribute('tabindex','0');
+});
+	})
+</script>
+</head>
+
+<body>
+	
+	<div id = "Viewer">
+		Hover over an image below to display here.
+	</div>
+	
+<div class="littlePics">
+	<img id = "littlePic" alt = "Clevaland Browns Stadium" src="Images/IMG_7035.jpg"
+	onfocus = "upDate(this)" onblur = "unDo(this)" onmouseover = "upDate(this)" onmouseout = "unDo(this)">
+	
+	<img id = "littlePic" alt = "Highmark Stadium Buffalo" src="Images/Buffalo.jpg" 
+	onfocus = "upDate(this)" onblur = "unDo(this)" onmouseover = "upDate(this)" onmouseout = "unDo(this)">
+	
+	<img id = "littlePic" src="Images/Cincinatti.jpg" alt = "Paycor Stadium Cincinatti"
+	onfocus = "upDate(this)" onblur = "unDo(this)" onmouseover = "upDate(this)" onmouseout = "unDo(this)">
+	
+	<img id = "littlePic" alt = "Oakland Coliseum Oakland" src="Images/Oakland.JPG"
+	onfocus = "upDate(this)" onblur = "unDo(this)" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img id = "littlePic" alt = "Heinz Field Pitsburg" src="Images/Pitsburg.jpg"
+	onfocus = "upDate(this)" onblur = "unDo(this)" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img id = "littlePic" src="Images/Washington.jpg" alt = "Lumen Field Washington"
+	onfocus = "upDate(this)" onblur = "unDo(this)" onmouseover = "upDate(this)" onmouseout = "unDo()">
+</div>
+	
+</body>
+<script  src="./script.js"></script>
+</html>

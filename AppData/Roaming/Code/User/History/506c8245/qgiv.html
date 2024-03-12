@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BISHOP FAMILY MARTIAL ARTS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+   
+  <nav class="navSection">
+    <img class ="HeaderLogo" src="Images/BishopLogo.jpg" alt="">    
+    <button class="navButton" onclick="location.href='index.html'">Home</button>
+        <button class="navButton" onclick="location.href='KaratePrograms.html'">Karate Programs</button>
+        <button class="navButton" onclick="location.href='FitnessKickboxing.html'">Fitness Kickboxing</button>
+        <button class="navButton" onclick="location.href='AboutUs.html'">About Us</button>    
+        <button class="navButtonCurrent" onclick="location.href='ContactUs.html'">Contact Us</button>
+        <!-- <button class="navButton" onclick="location.href='MemberPage.html'">Login</button> -->
+  </nav>
+<body>       
+    <div class="ContactUsContainer">
+        <img class="formBackground" src="Images/SchoolExterior.JPG" height="80vh">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.3855045034675!2d-79.5597733!3d43.201403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882caf7e256712e7%3A0x35aeea515063aad0!2s24%20Olive%20St%2C%20Grimsby%2C%20ON%20L3M%202B6!5e0!3m2!1sen!2sca!4v1708981921470!5m2!1sen!2sca" width="500" height="400em" style="border: black solid .1em;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+    <!------------------------------ This is the lead capture section for Zenplanner -->
+    <div id="leadcapture_8b017b8e-03d3-402b-bbb4-ff8eaac31260"></div><script type="text/javascript">(function(win, doc, zenJSHost, src, module, partitionApiKey, widgetInstanceId) {
+        win.zenplanner = win.zenplanner || {};
+        win.zenplanner.directLoadArgs = win.zenplanner.directLoadArgs || [];
+        var tryCount = 0,
+            intervalId = null;
+        function afterLoad() {
+            if (win.zenplanner.directLoader !== undefined && window.zenplanner.directLoader !== null) {
+                clearInterval(intervalId);
+                for (var i = 0, l = win.zenplanner.directLoadArgs.length; l > i; i++) {
+                    if (win.zenplanner.directLoadArgs[i].widgetInstanceId === widgetInstanceId) {
+                        win.zenplanner.directLoader.loadWidget(zenJSHost, module, partitionApiKey, widgetInstanceId);
+                    }
+                }
+            } else if (tryCount++ > 200) {
+                console.log('Zen Planner widget : ' + module + ', failed to load.');
+                clearInterval(intervalId);
+            }
+        }
+        if (win.zenplanner.directLoader === undefined || win.zenplanner.directLoader === null) {
+            win.zenplanner.directLoadArgs.push({
+                module: module,
+                partitionApiKey: partitionApiKey,
+                widgetInstanceId: widgetInstanceId
+            });
+            var s = doc.createElement('script');
+            s.async = 1;
+            s.src = zenJSHost + '/' + src;
+            doc.head.appendChild(s);
+            intervalId = setInterval(afterLoad, 50);
+        } else {
+            win.zenplanner.directLoader.loadWidget(zenJSHost, module, partitionApiKey, widgetInstanceId);
+        }
+    })(
+        window,
+        document,
+        'https://studio.zenplanner.com',
+        'zenplanner/studio/target/zp-widget-direct.js',
+        'leadcapture',
+        '29f4952d-b743-430c-af6c-bb50b59a9771',
+        '8b017b8e-03d3-402b-bbb4-ff8eaac31260'
+    );
+    </script> 
+    </div>   
+   
+  
+<footer class="ContactUsFooter">
+    <div class="footerContent">
+        <p>(905)-309-0380</p>
+        <p>© 2024 Bishop Family Martial Arts</p>
+    </div>
+</footer>  
+</body> 
+</html>
